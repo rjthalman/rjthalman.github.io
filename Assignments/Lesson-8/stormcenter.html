@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WeatherNow Gallery</title>
+  <meta name="author" content="Robert Thalman">
+  <meta name="description" content="Gallery">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,900" rel="stylesheet"> 
+  <link href="css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="css/small.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="css/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="css/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <img src="images/pexels-photo-314726.jpeg" alt="The site logo" width="100%" height="127 rem">
+    <div class="header"><h1>WeatherNow</h1></div>
+    </div>
+    <div class="subheading"><i>Our weather Now for our neck of the Woods</i></div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+     <div class="container">
+    	<div class="box"><a href="index.html">Home</a></div>
+    	<div class="box"><a href="index.html">Franklin</a></div>
+    	<div class="box"><a href="#">Greenville</a></div>
+    	<div class="box"><a href="#">Springfield</a></div>
+    	<div class="box"><a href="stormcenter.html">Storm Center</a></div>
+    	<div class="box"><a href="gallery.html">Gallery</a></div>
+    </div>			
+  </nav>
+    <body>
+  <main>
+      <fieldset>
+        <label><span>Full Name:</span><input name="fullname" type="text" value="" pattern="[a-zA-Z -._]{5,99}" required></label>
+          <label><span>Email:</span><input name="email" type="email" placeholder="bobs@youruncle.com" ></label>
+          <label><span>Phone:</span><input name="phone" type="tel" value="" pattern="[0-9]{10,20}"  required></label>
+          <label><span>Zipcode:</span><input name="zipcode" type="number"  pattern="[0-9]{5,8}" required></label>
+          <label><span>Storm Date:</span><input name="stormDate" type="date" required></label>
+          <label>
+          <span>Storm Type:</span>
+          <input type="text" name="stromType" list="types">
+          <datalist id="types"></datalist>
+          <options value="Flash Flood" ></options>
+          <options value="Hail" ></options>
+          <options value="Hurricane" ></options>
+          <options value="Thunderstorm" ></options>
+          <options value="Tornado" ></options>
+            </label>
+          <label><span>Storm Severity</span><input type="range" name="severity" min="1" max="10"> </label>
+          <label><span>Region</span>
+              <select name="region" >
+            <options value="Select Region" disable>Select Region</options><options value="Franklin">Franklin</options>
+            <options value="Greenville">Greenville</options>
+            <options value="Springfield">Springfield</options>
+          </select>
+          </label>
+          <label><span>Dangerous</span>
+              <input type="radio" name="danger" value="yes">Yes!
+              <input type="radio" name="danger" value="maybe">Maybe
+              <input type="radio" name="danger" value="no">no
+          </label>
+          <label><span>
+              Storm Details:<textarea name="stormDetail" width="30" height="50"></textarea>
+              </span>
+          </label>
+          <input type="submit" value="Submit" class="submitStorm">
+      </fieldset>
+    
+  </main>  
+    
+    <footer>
+    <aside>
+      Contact information placeholder
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+
+</body>
+</html>

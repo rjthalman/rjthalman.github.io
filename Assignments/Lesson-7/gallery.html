@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WeatherNow Gallery</title>
+  <meta name="author" content="Robert Thalman">
+  <meta name="description" content="Gallery">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,900" rel="stylesheet"> 
+  <link href="css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="css/small.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="css/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="css/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <img src="images/pexels-photo-314726.jpeg" alt="The site logo" width="100%" height="127 rem">
+    <div class="header"><h1>WeatherNow</h1></div>
+    </div>
+    <div class="subheading"><i>Our weather Now for our neck of the Woods</i></div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+     <div class="container">
+    	<div class="box"><a href="#">Home</a></div>
+    	<div class="box"><a href="#">Franklin</a></div>
+    	<div class="box"><a href="#">Greenville</a></div>
+    	<div class="box"><a href="#">Springfield</a></div>
+    	<div class="box"><a href="#">Storm Center</a></div>
+    	<div class="box"><a href="#">Gallery</a></div>
+    </div>			
+  </nav>
+    <body>
+  <main>
+    <div class=pictures>
+        <div><img src="images/field-clouds-sky-earth-46160.jpeg">North Franklin</div>
+        <div><img src="images/pexels-photo-111963.jpeg">Down Town franklin</div>
+        <div><img src="images/images-5.jpeg">Puddle Reflextion</div>
+        <div><img src = "images/images-6.jpeg">Mt.Fairbrook</div>
+        <div><img src = "images/iStock-186538582-ColumnA-min.jpg">Thuderstorm</div>
+        <div><img src="images/pexels-photo-111963.jpeg"></div>
+    </div>
+  </main>  
+    
+    <footer>
+    <aside>
+      Contact information placeholder
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+
+</body>
+</html>
