@@ -37,6 +37,7 @@
   </nav>
     <body>
   <main>
+      <form action="/thanks.html" method="get" name="stormCenter" id="Storm">
       <fieldset>
         <label><span>Full Name:</span><input name="fullname" type="text" value="" pattern="[a-zA-Z -._]{5,99}" required></label>
           <label><span>Email:</span><input name="email" type="email" placeholder="bobs@youruncle.com" ></label>
@@ -67,11 +68,13 @@
               <input type="radio" name="danger" value="no">no
           </label>
           <label><span>
-              Storm Details:<textarea name="stormDetail" width="30" height="50"></textarea>
-              </span>
+              Storm Details:</span><textarea name="stormDetail" width="30" height="50"></textarea>
+              
           </label>
+        </fieldset>
+    </form>
           <input type="submit" value="Submit" class="submitStorm">
-      </fieldset>
+      
     
   </main>  
     
