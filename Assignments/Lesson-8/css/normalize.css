@@ -34,7 +34,7 @@ article,
 aside,
 footer,
 header {},
-nav,{}
+nav{},
 
 section {
   display: block;

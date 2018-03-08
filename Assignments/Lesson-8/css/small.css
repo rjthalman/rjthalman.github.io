@@ -151,7 +151,6 @@ label span{
 }
 input.submitStorm{
     
-    -webkit-appearance:none;
     color:#fff;
     border:solid 1px #111;
     border-radius:7px;
