@@ -1,0 +1,164 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+ font-family: 'Lato', sans-serif;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {}
+header h1 {
+    text-align: center;
+}
+header img {}
+ .container{
+        position: relative;
+     text-align: center;
+     color: white;
+    }
+.header{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+header .subheading {
+    
+    text-align: center;
+}
+
+nav {
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+
+}
+nav button {}
+nav{margin: 0;}
+.container{
+    display:flex;
+    border: none;
+    flex-wrap: wrap
+}
+.box{
+    
+    justify-content: center;
+    background: #67b1ad;
+    height: 30px;
+    width:16.6% ;
+    text-align: center;
+}
+@media screen and (max-width: 400px){
+.box{
+    background: #67b1ad;
+    height: 30px;
+    width: 100% ;
+    text-align: center;
+    
+}
+}
+
+main {
+    
+    }
+main h2 {
+    text-align: center;
+ color: blue;
+
+    }
+main figure { }
+main figure img {
+width:100%;
+}
+.current picture img{
+    width:30%;
+    float: left;
+}
+section {
+    }
+section.forecast{
+    display: none;
+    }
+article p.town-article img { 
+    float: right;
+    margin: 0 0 1em 1em
+  width: 100%; /* fill the page in the small/phone view */
+  margin: ???;
+}
+
+footer {
+    text-align: center;
+    position:relative;
+    background-color: #7acef8;
+    height:2%;
+    
+}
+footer aside {}
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/*------------gallery grid-----------------*/
+@media screen and (max-width: 400px){
+.pictures {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap:2%;
+    }
+    .pictures img{
+     width:100%; 
+     } 
+   .pictures img:hover {box-shadow: 5px 5px 10px gray;}
+}
+
+/*------------------Storm Center----------------------*/
+/*--colors #67b1ad #33838f #7acef8 #83e8f0 #ccf1f6 --*/
+form#Storm{
+   margin:2em 3%; 
+}
+
+fieldset {
+    background-color:#ccf1f6;
+    border-radius: .2em;
+    margin:1.5em 0;
+    border:#33838f solid 1px;
+}
+}
+label{
+    display:block;
+    margin:.5em;
+}
+label span{
+    display: block;
+    font-size: .8em;
+    color: #67b1ad;
+    padding-top: .7em;
+    padding-bottom: .2em;
+        
+}
+input.submitStorm{
+    
+    color:#fff;
+    border:solid 1px #111;
+    border-radius:7px;
+    width: 50%;
+    margin:.9em 3%;
+    font-size: 1em;
+    padding:.6em;
+    background:#67b1ad; /*old browsers*/
+    box-shadow: 4px 4px 10px #666;
+        
+}

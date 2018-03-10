@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WeatherNow for the Franklin area</title>
+  <meta name="author" content="Robert Thalman">
+  <meta name="description" content="WeatherNow for Franklin, Greenville, Springfield">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,900" rel="stylesheet"> 
+  <link href="css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="css/small.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="css/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="css/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+    <link href="scripts/weather.json" re="scripts">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <img src="images/pexels-photo-314726.jpeg" alt="The site logo" width="100%" height="127 rem">
+    <div class="header"><h1>WeatherNow</h1></div>
+    </div>
+    <div class="subheading"><i>Our weather Now for our neck of the Woods</i></div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <div class="container">
+    	<div class="box"><a href="index.html">Home</a></div>
+    	<div class="box"><a href="index.html">Franklin</a></div>
+    	<div class="box"><a href="#">Greenville</a></div>
+    	<div class="box"><a href="#">Springfield</a></div>
+    	<div class="box"><a href="stormcenter.html">Storm Center</a></div>
+    	<div class="box"><a href="gallery.html">Gallery</a></div>
+    </div>		
+  </nav>
+    
+  <main>
+      
+    <h2>Franklin</h2>
+    <figure>
+      <img src="images/franklin-original.jpeg" alt="Franklin">
+    </figure>
+    <section>
+      <h3>Weather Summary</h3>    
+      <div class="highlow">
+          <p>High: <span id="tempHi">90</span>°F</p>
+          <p>Low: <span id="tempLo">66</span>°F</p>
+      </div>
+      <div class="current">
+        Sunny
+        <picture>
+            <img src="images/Sun%20picture.jpeg" alt="Sunny" >
+        </picture>
+      </div>   
+      <div class="conditions">
+        <p>Precipitation: 0%</p>  
+        <p>Wind Speed: 5 mph SW</p> 
+          <p>Wind chill:<div id="output"> Degrees F</div></p>
+      </div>           
+    </section>
+        
+    <section class="forecast">
+      <h3>10 Day Forecast</h3>
+      <table>
+	    <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+		</thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+		</tbody>
+      </table>
+    </section>
+      
+    <article>
+      <h3>Franklin Breaks Record</h3>	
+      <p class="town-article">
+        <img src="images/pexels-photo-111963.jpeg" alt="Picture of Franklin City" width="200 rem" height="">
+        This aritnd sijfni siehs ds dkfj. sjf dskfjdis ensdkjfi skfjds fds.  Tkdjfdsl iaknfk d dskjfsdlk kadkfj iems ifdsli kdjfsij si skisne snf islen sljds  kd. kjisslnidl kslnkds ks kls skdjjs ilwend iidnfs tihdsl sdjs isjejs lkdfjs . 
+      </p>
+		</article>		  
+  
+  </main>
+    
+  <footer>
+    <aside>
+      Contact information placeholder
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+
+</body>
+</html>
