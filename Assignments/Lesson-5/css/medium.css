@@ -5,6 +5,9 @@
   
   section.forecast { display: table-cell; }  /* show the 10-day forecast with the medium view and up */
   
+    section.current picture img{
+        width:25%
+    }
   article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
  
  

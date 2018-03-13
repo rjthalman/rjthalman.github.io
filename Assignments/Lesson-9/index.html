@@ -30,25 +30,87 @@
     <div class="container">
     	<div class="box"><a href="index.html">Home</a></div>
     	<div class="box"><a href="Franklin.html">Franklin</a></div>
-    	<div class="box"><a href="#">Greenville</a></div>
-    	<div class="box"><a href="#">Springfield</a></div>
+    	<div class="box"><a href="Greenville.html">Greenville</a></div>
+    	<div class="box"><a href="Springfield.html">Springfield</a></div>
     	<div class="box"><a href="stormcenter.html">Storm Center</a></div>
     	<div class="box"><a href="gallery.html">Gallery</a></div>
     </div>		
   </nav>
     
-<article>
+    
+    <main id=thetowns>
+    </main>
+    <section class=thetowns>
+    </section> 
+<article style="">
     <h2>Weather Story</h2>
     <p>Nullam tristique massa magna, sed rutrum sapien sonsectetur it. Donec erat doolr, posuere sed erat vitae, volutpat lobortis orci crabutru ut dfficitur nisl. Mumc elementum dolor in ierat cursus, e</p>
     <img src="images/pexels-photo-111963.jpeg" alt="Amazing weather story">
     </article>
-    
-    
-   <h1>Forcast</h1>
-    <h2>Weather Conditions for <span id=place>City, State</span></h2>
-    <p><span id="motto">motto</span></p>
-    <p>Current Temperature is <span id="currentTemp"> 120 </span>&deg;</p>
-    <img src="images/placeholder.png" alt="current weather" id="weather_icon">
+   
+   <script>
+                var header = document.querySelector('header');
+                var section = document.querySelector('section');
+                var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+                var request = new XMLHttpRequest();
+                request.open('GET', requestURL);
+                request.responseType = 'json';
+                request.send();
+                request.onload = function() {
+                    var towns = request.response;
+                    populateHeader(towns);
+                    showTowns(towns);
+                }
+                function populateHeader(jsonObj) {
+                    var myH1 = document.createElement('h1');
+                    
+                    header.appendChild(myH1);
+
+                    var myPara = document.createElement('p');
+                    
+                    header.appendChild(myPara);
+                }
+                function showTowns(jsonObj) {
+                    var towns = jsonObj['towns'];
+                    towns.splice (2,1);
+
+                    for (var i = 0; i < towns.length; i++) {
+                        var myArticle = document.createElement('article');
+                        var myH2 = document.createElement('h2');
+                        var myPara1 = document.createElement('p');
+                        var myPara2 = document.createElement('p');
+                        var myPara3 = document.createElement('p');
+                        var myPara4 = document.createElement('p');
+                        var myPara5 = document.createElement('p');
+                        var myList = document.createElement('ul');
+
+                        myH2.textContent = towns[i].name;
+                        myPara1.textContent = 'Motto: ' + towns[i].motto;
+                        myPara2.textContent = 'Founded: ' + towns[i].yearFounded;
+                        myPara3.textContent = 'Current population: ' + towns[i].currentPopulation;
+                        myPara4.textContent = 'Average Rainfall: ' + towns[i].averageRainfall + " inches";
+                        myPara5.textContent = 'Community Events:';
+
+                        var communityEvents = towns[i].events;
+                        for (var j = 0; j < communityEvents.length; j++) {
+                            var listItem = document.createElement('li');
+                            listItem.textContent = communityEvents[j];
+                            myList.appendChild(listItem);
+                        }
+
+                        myArticle.appendChild(myH2);
+                        myArticle.appendChild(myPara1);
+                        myArticle.appendChild(myPara2);
+                        myArticle.appendChild(myPara3);
+                        myArticle.appendChild(myPara4);
+                        myArticle.appendChild(myPara5);
+                        myArticle.appendChild(myList);
+
+                        section.appendChild(myArticle);
+                    }
+                }
+
+            </script>   
     
 
   <footer>
@@ -57,7 +119,6 @@
     </aside>
     <p class="footer-bar">&copy;2017 All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span></p>
   </footer>
-    <script src="scripts/weather.js" ></script>
     
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/currentdate.js"></script>

@@ -46,8 +46,6 @@ nav {
   <li><a href="#about">About</a></li>
 </ul>
 
-
-}
 nav button {}
 nav{margin: 0;}
 .container{
@@ -161,4 +159,41 @@ input.submitStorm{
     background:#67b1ad; /*old browsers*/
     box-shadow: 4px 4px 10px #666;
         
+}
+/*------------Home page JSON--------*/
+
+
+
+section.thetowns article {
+    background-color:#ccf1f6 ;
+    border: 1px solid #122034;
+    float:inherit;
+    margin: .3em;
+    display: grid;
+    height: 400px;
+    max-width: 98%;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    justify-content: center;
+    border-radius: 2em;
+    
+  }
+section.thetowns h2 {
+    clear: right;
+    text-align: center;
+    color: #122034;
+
+
+}
+section.thetowns p {
+   margin: 0;
+    text-align: center;
+    color: #111;
+    
+
+}
+section.thetowns li {
+    justify-content: left;
+    width: 98%;
+    color: #111;
 }
