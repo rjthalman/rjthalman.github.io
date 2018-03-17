@@ -27,21 +27,23 @@
   <!-- site navigation use placeholder references -->
   <nav>
     <button onclick="toggleNavMenu()">&#9776;</button>
-    <div class="container">
-    	<div class="box"><a href="index.html">Home</a></div>
-    	<div class="box"><a href="Franklin.html">Franklin</a></div>
-    	<div class="box"><a href="Greenville.html">Greenville</a></div>
-    	<div class="box"><a href="Springfield.html">Springfield</a></div>
-    	<div class="box"><a href="stormcenter.html">Storm Center</a></div>
-    	<div class="box"><a href="gallery.html">Gallery</a></div>
-    </div>		
+    <ul id="mainNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="franklin.html">Franklin</a></li>
+                <li><a href="greenville.html">Greenville</a></li>
+                <li><a href="springfield.html">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>	
   </nav>
     
   <main>
       
     <h2>Franklin</h2>
-    <figure>
-      <img src="images/franklin-original.jpeg" alt="Franklin">
+    <figure class="awesome">
+        <source media="(minwidth:64em)" srcset="images/franklin-large.jpg">
+        <source media="(minwidth:37.5em)" srcset="images/franklin-medium.jpg">
+      <img src="images/franklin-small.jpg" alt="Franklin">
     </figure>
     <section>
       <h3>Weather Summary</h3>    
@@ -51,7 +53,7 @@
           <p>Low: <span id="tempLo">66</span>°F</p>
       </div>
       <div class="current">
-        Sunny
+        <p> <span id="weather">Sunny</span></p>
         <picture>
             <img src="images/Sun%20picture.jpeg" alt="Sunny" >
         </picture>
@@ -62,6 +64,7 @@
           <p>Wind chill:<div id="output"> Degrees F&deg;</div></p>
       </div>           
     </section>
+   
         
     <section class="forecast">
       <h3>10 Day Forecast</h3>
@@ -109,11 +112,13 @@
     
   <footer>
     <aside>
-      Contact information placeholder
+      <p>WeatherNow.com</p>
+        <p>Allotte Street</p>
+        <p>Franklin, MN 37213</p>
     </aside>
-    <p class="footer-bar">&copy;2017 All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span></p>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | WeatherNow| <span id="currentdate">Current Date Placeholder</span></p>
   </footer>
-
+  <script src="scripts/newWeather.js"></script>
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/currentdate.js"></script>
 

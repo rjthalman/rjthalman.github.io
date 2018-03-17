@@ -1,0 +1,262 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+ font-family: 'Lato', sans-serif;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {}
+header h1 {
+    text-align: center;
+}
+header img {}
+ .container{
+        position: relative;
+     text-align: center;
+     color: black;
+    }
+.header{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+header .subheading {
+    
+    text-align: center;
+}
+nav {
+    background-color: #67b1ad;
+    font-family: "lato", sans-serif;
+}
+nav button {
+    margin: .2rem 3%;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #111;
+}
+nav ul {
+    /*display: none;*/
+    list-style-type:none;
+    padding: 0;
+    margin:0;
+}
+nav ul li {}
+nav ul li a {
+    display: block;
+    padding: .7rem 3%;
+    text-decoration: none;
+    color: #FFF;
+}
+
+nav ul li a:hover {
+    background-color: #672;
+    color: #FFF;
+}
+nav ul li.active a {
+    background-color: #67b;
+    color: #FFF;
+}
+nav ul li a:active {
+    background-color: #67b1ad;
+    color: #FFF;
+}
+nav ul.hide {
+    display: none;
+    
+}
+/*nav {
+}
+
+nav button {}
+nav{margin: 0;}
+.container{
+    display:flex;
+    border: none;
+    flex-wrap: wrap;
+    
+    
+}
+.box{
+    color:#111;
+    text-decoration: none;
+    justify-content: center;
+    background: #67b1ad;
+    height: 30px;
+    width:16.6% ;
+    text-align: center;
+    text-decoration: none;
+}
+.box:hover{
+    color:white;
+}
+@media screen and (max-width: 400px){
+.box{
+    background: #67b1ad;
+    height: 30px;
+    width: 100% ;
+    text-align: center;
+    
+}
+}
+*/
+main {
+    
+    }
+main h2 {
+    text-align: center;
+ color: blue;
+
+    }
+main figure { }
+main figure img {
+width:100%;
+}
+.current picture img{
+    width:30%;
+    float: left;
+}
+h3{
+    text-align: center;
+}
+.highlow {
+    text-align: right
+    }
+section.forecast{
+    display: none;
+    }
+section.forecast h3.{
+    
+}
+article p.town_article{
+    text-align: justify;
+}
+article p.town-article img { 
+    float: right;
+    margin: 0 0 1em 1em
+  width: 100%; /* fill the page in the small/phone view */
+  margin: ???;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    position:relative;
+    background-color: #7acef8;
+    height:5%;
+    
+}
+footer aside {
+    margin: 0 0 0 0;
+}
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/*------------gallery grid-----------------*/
+@media screen and (max-width: 400px){
+.pictures {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap:2%;
+    }
+    .pictures img{
+     width:100%; 
+     } 
+   .pictures img:hover {box-shadow: 5px 5px 10px gray;}
+}
+
+/*------------------Storm Center----------------------*/
+/*--colors #67b1ad #33838f #7acef8 #83e8f0 #ccf1f6 --*/
+form#Storm{
+   margin:2em 3%; 
+}
+
+fieldset {
+    background-color:#ccf1f6;
+    border-radius: .2em;
+    margin:1.5em 0;
+    border:#33838f solid 1px;
+}
+}
+label{
+    display:block;
+    margin:.5em;
+}
+label span{
+    display: block;
+    font-size: .8em;
+    color: #27b1ad;
+    padding-top: .7em;
+    padding-bottom: .2em;
+        
+}
+input.submitStorm{
+    
+    color:#fff;
+    border:solid 1px #111;
+    border-radius:7px;
+    width: 50%;
+    margin:.9em 3%;
+    font-size: 1em;
+    padding:.6em;
+    background:#67b1ad; /*old browsers*/
+    box-shadow: 4px 4px 10px #666;
+        
+}
+/*------------Home page JSON--------*/
+main.figure.awesome{
+    width:100%;
+    margin:0;
+}
+main.figure.awesome.img{
+    width:100%;
+}
+@media screen and (max-width: 400px){
+    section.thetowns article{
+        
+    }
+}
+
+section.thetowns article {
+    background-color:#ccf1f6 ;
+    border: 1px solid #122034;
+    float:left;
+    margin: .3em;
+    display: grid;
+    height:;
+    width: 98%;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    justify-content: center;
+    border-radius: 2em;
+    
+    
+  }
+section.thetowns h2 {
+    height: 4%
+    clear: right;
+    text-align: center;
+    color: #122034;
+
+
+}
+section.thetowns p {
+   margin: 1em;
+    text-align: center;
+    color: #111;
+    
+
+}
+section.thetowns li {
+    justify-content: left;
+    width: 98%;
+    color: #111;
+}
+

@@ -18,7 +18,7 @@
 
   <header>
     <div class="container">
-      <img src="images/pexels-photo-314726.jpeg" alt="The site logo" width="100%" height="127 rem">
+      <img src="images/pexels-photo-314726.jpeg" alt="The WeatherNow" width="100%" height="127 rem">
     <div class="header"><h1>WeatherNow</h1></div>
     </div>
     <div class="subheading"><i>Our weather Now for our neck of the Woods</i></div>
@@ -27,26 +27,26 @@
   <!-- site navigation use placeholder references -->
   <nav>
     <button onclick="toggleNavMenu()">&#9776;</button>
-    <div class="container">
-    	<div class="box"><a href="index.html">Home</a></div>
-    	<div class="box"><a href="Franklin.html">Franklin</a></div>
-    	<div class="box"><a href="Greenville.html">Greenville</a></div>
-    	<div class="box"><a href="Springfield.html">Springfield</a></div>
-    	<div class="box"><a href="stormcenter.html">Storm Center</a></div>
-    	<div class="box"><a href="gallery.html">Gallery</a></div>
-    </div>		
-  </nav>
-    
-    
+    <ul id="mainNav" class="hide">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="franklin.html">Franklin</a></li>
+                <li><a href="greenville.html">Greenville</a></li>
+                <li><a href="springfield.html">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>	
+  </nav>		
+  
+
     <main id=thetowns>
-        <img src="images/iStock-186538582-ColumnA-min.jpg">
+        
     </main>
     <section class=thetowns>
     </section> 
 <article style="">
     <h2>Weather Story</h2>
-    <p>Nullam tristique massa magna, sed rutrum sapien sonsectetur it. Donec erat doolr, posuere sed erat vitae, volutpat lobortis orci crabutru ut dfficitur nisl. Mumc elementum dolor in ierat cursus, e</p>
-    <img src="images/pexels-photo-111963.jpeg" alt="Amazing weather story">
+    <p>Nullam tristique massa magna, sed rutrum sapien sonsectetur it. Donec erat doolr, posuere sed erat vitae, volutpat lobortis orci crabutru ut dfficitur nisl. Mumc elementum dolor in ierat cursus, eNullam tristique massa magna, sed rutrum sapien sonsectetur it. Donec erat doolr, posuere sed erat vitae, volutpat lobortis orci crabutru ut dfficitur nisl. Mumc elementum dolor in ierat.</p>
+    <img src="images/iStock-186538582-ColumnA-min.jpg">
     </article>
    
    <script>
@@ -116,9 +116,11 @@
 
   <footer>
     <aside>
-      Contact information placeholder
+      <p>WeatherNow.com</p>
+        <p>Allotte Street</p>
+        <p>Franklin, MN 37213</p>
     </aside>
-    <p class="footer-bar">&copy;2017 All Rights Reserved | Site Title | <span id="currentDate">Current Date Placeholder</span></p>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | WeatherNow| <span id="currentdate">Current Date Placeholder</span></p>
   </footer>
     
   <script src="scripts/hamburger.js"></script>

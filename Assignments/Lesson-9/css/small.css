@@ -20,7 +20,7 @@ header img {}
  .container{
         position: relative;
      text-align: center;
-     color: white;
+     color: black;
     }
 .header{
     position:absolute;
@@ -32,34 +32,71 @@ header .subheading {
     
     text-align: center;
 }
-
 nav {
+    background-color: #67b1ad;
+    font-family: "lato", sans-serif;
 }
-</style>
-</head>
-<body>
+nav button {
+    margin: .2rem 3%;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #111;
+}
+nav ul {
+    /*display: none;*/
+    list-style-type:none;
+    padding: 0;
+    margin:0;
+}
+nav ul li {}
+nav ul li a {
+    display: block;
+    padding: .7rem 3%;
+    text-decoration: none;
+    color: #FFF;
+}
 
-<ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul>
+nav ul li a:hover {
+    background-color: #672;
+    color: #FFF;
+}
+nav ul li.active a {
+    background-color: #67b;
+    color: #FFF;
+}
+nav ul li a:active {
+    background-color: #67b1ad;
+    color: #FFF;
+}
+nav ul.hide {
+    display: none;
+    
+}
+/*nav {
+}
 
 nav button {}
 nav{margin: 0;}
 .container{
     display:flex;
     border: none;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    
+    
 }
 .box{
-    
+    color:#111;
+    text-decoration: none;
     justify-content: center;
     background: #67b1ad;
     height: 30px;
     width:16.6% ;
     text-align: center;
+    text-decoration: none;
+}
+.box:hover{
+    color:white;
 }
 @media screen and (max-width: 400px){
 .box{
@@ -70,7 +107,7 @@ nav{margin: 0;}
     
 }
 }
-
+*/
 main {
     
     }
@@ -87,11 +124,21 @@ width:100%;
     width:30%;
     float: left;
 }
-section {
+h3{
+    text-align: center;
+}
+.highlow {
+    text-align: right
     }
 section.forecast{
     display: none;
     }
+section.forecast h3.{
+    
+}
+article p.town_article{
+    text-align: justify;
+}
 article p.town-article img { 
     float: right;
     margin: 0 0 1em 1em
@@ -100,13 +147,16 @@ article p.town-article img {
 }
 
 footer {
+    clear: both;
     text-align: center;
     position:relative;
     background-color: #7acef8;
-    height:2%;
+    height:5%;
     
 }
-footer aside {}
+footer aside {
+    margin: 0 0 0 0;
+}
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
 /*------------gallery grid-----------------*/
@@ -142,7 +192,7 @@ label{
 label span{
     display: block;
     font-size: .8em;
-    color: #67b1ad;
+    color: #27b1ad;
     padding-top: .7em;
     padding-bottom: .2em;
         
@@ -161,24 +211,36 @@ input.submitStorm{
         
 }
 /*------------Home page JSON--------*/
-
-
+main.figure.awesome{
+    width:100%;
+    margin:0;
+}
+main.figure.awesome.img{
+    width:100%;
+}
+@media screen and (max-width: 400px){
+    section.thetowns article{
+        
+    }
+}
 
 section.thetowns article {
     background-color:#ccf1f6 ;
     border: 1px solid #122034;
-    float:inherit;
+    float:left;
     margin: .3em;
     display: grid;
-    height: 400px;
-    max-width: 98%;
+    height:;
+    width: 98%;
     grid-template-columns: 1fr;
     grid-gap: 1em;
     justify-content: center;
     border-radius: 2em;
     
+    
   }
 section.thetowns h2 {
+    height: 4%
     clear: right;
     text-align: center;
     color: #122034;
@@ -186,7 +248,7 @@ section.thetowns h2 {
 
 }
 section.thetowns p {
-   margin: 0;
+   margin: 1em;
     text-align: center;
     color: #111;
     
@@ -197,3 +259,4 @@ section.thetowns li {
     width: 98%;
     color: #111;
 }
+

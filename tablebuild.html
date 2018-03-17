@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-us">
+     <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+         <title>CIT 230 Assignment table build | Robert T. Student | BYU-Idaho</title>
+         <meta name="desctiption" content="table build, Robert student in CIT 230: Web Frontend Development at BYU-I." >
+         //*Get as close as possible to the displayed design and structure for full credit. 
+You must use the thead,  tbody and tfoot tags in your table structure.
+You may use a maximum of one class selector.
+Style details:
+The font-family is Ubuntu, sans-serif.
+Color scheme includes #e7f0ed, #e7ffed (data rows) and #628ca6, #7fb9c2 with white and black.
+You may find the first-child and nth:child() pseudo classes helpful in CSS.*//
+        <style>
+            boby{
+              
+            
+            }
+         table{
+            margin-left: 25%;
+             font-family: "Ubuntu", sans-serif;
+             border: 1px solid #dddddd;
+             border-collapse: collapse;
+             width: 300px;
+             height: 400px;
+           text-align: center
+        }
+        td, th{
+            border: 1px solid #dddddd;
+              
+        } 
+            th{
+                
+            }
+         </style> 
+    </head>
+        <body>
+            
+        <table style="box-shadow: 5px 5px 10px #666;">
+            <tr>
+            <th style="background-color: #7fb9c2; font-size: 150%" colspan="3">ACME Wildwest
+            </th>
+            </tr>
+            <tr style="color:white; background-color:#628ca6;">
+                <th>Period</th>
+                <th>Sales</th>
+                <th>Sales Goal</th>
+            </tr>
+            <tr style="background-color:#e7f0ed">
+                <td >August</td>
+                <td>$3,590</td>
+                <td>$4,000</td>
+            </tr>
+            <tr style="background-color: #e7ffed">
+                <td>September</td>
+                <td>$4,420</td>
+                <td>$5,000</td>
+            </tr>
+            <tr style="background-color:#e7f0ed">
+                <td>October</td>
+                <td>$4,870</td>
+                <td>$5,000</td>
+            </tr>
+            <tr>
+                <td style="background-color: #e7ffed">November</td>
+                <td style="background-color: #e7ffed">$8,610</td>
+                <td style=background-color:#628ca6;>$7,500</td>
+            </tr>
+            <tr style="background-color:#e7f0ed">
+                <td><i>Black Friday</i></td>
+                <td colspan="2">$3,200</td>
+            </tr>
+            <tr style="background-color: #e7ffed">
+                <td>December</td>
+                <td>$6,820</td>
+                <td>$7,500</td>
+            </tr>    
+               <tr >
+                <td style="background-color:#7fb9c2; font-size:80%;" colspan="3">Compiled 12.20.2020 by bRauls
+                </td>
+                </tr>
+        </table>      
+        </body>
+</html>
