@@ -4,11 +4,13 @@
 	<meta charset="UTF-8">
 	<title>Alcove Digital Systems</title>
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script>
 	$(function(){
 		// jQuery Code goes here
-			
+		$('.coreValues').prepend('<li>This is brand new !!</li>');
+
+		$("<li><strong>This is also great !!</strong></li>").prependTo(".coreValues");
 	})
 	</script>
 </head>
