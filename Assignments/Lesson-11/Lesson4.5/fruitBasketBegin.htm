@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Fruit Basket</title>
 	<link rel="stylesheet" href="css/fruitBasket.css">
-	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script>
 	$(function(){
 		// Array containing Objects with Fruit names & quantities
@@ -17,7 +17,7 @@
 							{title:'Tomatoes', quantity:30} ];
 
 	$.each( fruitBasket, function(index, element){
-        $('.fruits').append('<li>We have ' _ element.quantity + " " +element.title + '</li>');
+        $('.fruits').append('<li>We have ' + element.quantity + " " + element.title + '</li>');
     })
 $('.fruits > li').each(function(index, element){
     $(element).css('background-color','rgb(100,200,0)')
