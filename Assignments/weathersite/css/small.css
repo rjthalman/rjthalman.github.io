@@ -99,8 +99,9 @@ h3{
     text-align: center;
 }
 .highlow {
-    position: relative
-    text-align: right;
+    position: relative;
+    text-align: left;
+    display:block;
     }
 section.forecast{
     display: none;
