@@ -34,7 +34,7 @@ header img {}
 }
 header .subheading {
     
-    text-align: center;
+    text-align:center;
 }
 nav {
     background-color: #67b1ad;
@@ -113,9 +113,8 @@ article p.town_article{
 }
 article p.town-article img { 
     float: right;
-    margin: 0 0 1em 1em
-  width: 100%; /* fill the page in the small/phone view */
-  margin: ???;
+    margin: 0 0 1em 1em;
+  width: 100%;
 }
 
 footer {
@@ -202,32 +201,25 @@ section.thetowns article {
     float:left;
     margin: .3em;
     display: grid;
-    height:;
     width: 98%;
     grid-template-columns: 1fr;
     grid-gap: 1em;
     justify-content: center;
     border-radius: 2em;
-    
-    
-  }
+}
 section.thetowns h2 {
-    height: 4%
+    height: 4%;
     clear: right;
     text-align: center;
     color: #122034;
-
-
 }
 section.thetowns p {
    margin: 1em;
     text-align: center;
     color: #111;
-    
-
 }
 section.thetowns li {
-    justify-content: left;
+    justify-content:center;
     width: 98%;
     color: #111;
 }

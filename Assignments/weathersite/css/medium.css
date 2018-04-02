@@ -22,7 +22,7 @@
         
     }
     section.forecast h3 {
-        background-color: 
+        background-color:#67b1ad; 
     }
   section.forecast { 
       display: table-cell;
@@ -50,7 +50,6 @@
 /*-----------------Main Page-----------------------*/
 section{
     display:grid;
-    grid-row: 1fr;
 }
 section.thetowns article {
     background-color:#ccf1f6 ;
@@ -78,7 +77,7 @@ section.thetowns p {
 
 }
 section.thetowns li {
-    justify-content: left;
+    justify-content:center;
     width: 98%;
     color: #111;
 }
