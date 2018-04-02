@@ -13,4 +13,5 @@ document.getElementById('tempHi').innerHTML = weatherInfo.forecast.simpleforecas
     document.getElementById('Temp').innerHTML = weatherInfo.current_observation.temp_f;
     document.getElementById('weather').innerHTML = weatherInfo.current_observation.weather;
    document.getElementById('weather_icon').src = weatherInfo.current_observation.icon_url; 
+    document.getElementById('windSpeed').src = weatherInfo.current_observation.wind_mph; 
 } 
