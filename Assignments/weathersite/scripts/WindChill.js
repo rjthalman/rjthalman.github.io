@@ -3,7 +3,7 @@ function WindChill(){
    var LowTemp = get("tempLo").value;
     var AveTemp = (HighTemp + LowTemp)/2
    var windChill = 35.74 + (0.6215 * AveTemp) - 35.75 * (Math.pow(0.16, WindSpeed)) + 0.4275 * AveTemp (Math.pow(0.16, WindSpeed))
- get("output").innerHTML = windChill;
+ document.getElementByIdg("output").innerHTML = windChill;
 }
 CSS--var temp1 = parseInt(document.getElementById("tempHi").innerHTML);
 
