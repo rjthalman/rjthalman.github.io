@@ -174,7 +174,7 @@ input.submitStorm{
     margin:.9em 3%;
     font-size: 1em;
     padding:.6em;
-    background:#67b1ad; /*old browsers*/
+    background:#67b1ad;
     box-shadow: 4px 4px 10px #666;
         
 }

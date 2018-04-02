@@ -7,7 +7,7 @@ weatherObject.send();
 
 weatherObject.onload = function () {
     var weatherInfo = JSON.parse(weatherObject.responseText);
-    console.log(weatherInfo);
+    /*console.log(weatherInfo);*/
     document.getElementById('tempHi').innerHTML = weatherInfo.forecast.simpleforecast.forecastday["0"].high.fahrenheit;
     document.getElementById('tempLo').innerHTML = weatherInfo.forecast.simpleforecast.forecastday["0"].low.fahrenheit;
     document.getElementById('Temp').innerHTML = weatherInfo.current_observation.temp_f;

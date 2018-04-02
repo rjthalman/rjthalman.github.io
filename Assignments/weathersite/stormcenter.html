@@ -37,7 +37,7 @@
   </nav>
     <body>
   <main>
-      <form action="/thanks.html" method="get" name="stormCenter" id="Storm">
+      <form action="thanks.html" method="get" name="stormCenter" id="Storm">
       <fieldset>
         <label><span>Full Name:</span><input name="fullname" type="text" value="" pattern="[a-zA-Z -._]{5,99}" required></label>
           <label><span>Email:</span><input name="email" type="email" placeholder="bobs@youruncle.com" ></label>
@@ -55,12 +55,12 @@
           <options value="Tornado" ></options>
             </label>
           <label><span>Storm Severity</span><input type="range" name="severity" min="1" max="10"> </label>
-          <label><span>Region</span>
-              <select name="region" >
-                <options value="Select Region" disable>Select Region</options>
-                <options value="Franklin">Franklin</options>
-                <options value="Greenville">Greenville</options>
-                <options value="Springfield">Springfield</options>
+          <label><span id="stormRegions">Storm Region</span>
+              <select name="region">
+                <option name="Region">Select Region</option>
+                <option value="Franklin">Franklin</option>
+                <option value="Greenville">Greenville</option>
+                <option value="Springfield">Springfield</option>
             </select>
           </label>
           <label><span>Dangerous</span>
