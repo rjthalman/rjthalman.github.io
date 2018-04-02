@@ -1,7 +1,7 @@
-//-------Weather from wUnderground.com  
+//-------Greeville  ----Weather from wUnderground.com  
 var weatherObject = new XMLHttpRequest();
 
-weatherObject.open('GET', '//api.wunderground.com/api/1a699fee0c2aac4/conditions/forecast/q/MN/Franklin.json', true);
+weatherObject.open('GET', '//api.wunderground.com/api/1a69d9fee0c2aac4/conditions/forecast/q/TX/Greenville.json', true);
 
 weatherObject.send();
 
@@ -13,4 +13,4 @@ document.getElementById('tempHi').innerHTML = weatherInfo.forecast.simpleforecas
     document.getElementById('Temp').innerHTML = weatherInfo.current_observation.temp_f;
     document.getElementById('weather').innerHTML = weatherInfo.current_observation.weather;
    document.getElementById('weather_icon').src = weatherInfo.current_observation.icon_url; 
-}
+} 
