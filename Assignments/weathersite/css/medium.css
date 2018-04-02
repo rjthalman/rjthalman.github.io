@@ -18,9 +18,6 @@
         border-right: 1px solid rgba(0,0,0,0.3);
         padding: .8rem 0.7rem;
     }
-    nav ul li a:hover{
-        
-    }
     section.forecast h3 {
         background-color:#67b1ad; 
     }

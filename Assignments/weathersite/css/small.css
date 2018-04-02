@@ -20,6 +20,7 @@ header img {}
  .container{
         position: relative;
      text-align: center;
+     margin:  0 0 0 0 ;
      color: black;
     }
 .container img{ 
@@ -61,7 +62,7 @@ nav ul li a {
     color: #FFF;
 }
 
-nav ul li a:hover {
+nav ul li a.hover {
     background-color: #672;
     color: #FFF;
 }
@@ -84,11 +85,11 @@ main {
 main h2 {
     text-align: center;
  color: blue;
-
-    }
-main figure  {
-width:100%}
-main figure img {
+}
+figure img{
+    width: 100%;
+}
+main picture.awesome img {
 width:100%;
 }
 .current picture img{
@@ -100,11 +101,21 @@ h3{
 }
 .highlow {
     position: relative;
-    text-align: left;
+    text-align: center;
     display:block;
     }
+.current{
+    position: relative;
+    text-align: center;
+    
+}
+.conditions{
+    position: relative;
+    
+    text-align: center;
+}
 section.forecast{
-    display: none;
+    display:none;
     }
 article p.town_article{
     text-align: justify;
