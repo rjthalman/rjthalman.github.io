@@ -12,7 +12,7 @@
   <link href="css/small.css" rel="stylesheet">    <!-- default styles - small/phone views -->
   <link href="css/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
   <link href="css/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
-    <link href="scripts/weather.json" rel="scripts">
+    <link href="scripts/weather.json" rel="script">
 </head>
 <body>
 
@@ -40,11 +40,11 @@
   <main>
       
     <h2>Franklin</h2>
-    <figure class="awesome">
+    <picture class="awesome">
         <source media="(minwidth:64em)" srcset="images/franklin-large.jpg" alt="Franklin">
         <source media="(minwidth:37.5em)" srcset="images/franklin-medium.jpg" alt="Franklin">
       <img src="images/franklin-small.jpg" alt="Franklin">
-    </figure>
+    </picture>
     <section>
       <h3>Weather Summary</h3>    
       <div class="highlow">
@@ -55,7 +55,7 @@
       <div class="current">
         <p>Weather: <span id="weather">Suny</span></p>
         <picture>
-            <img  id="weather_icon" alt="Weather Icon">
+            <img  src="weather_icon" alt="Weather Icon">
         </picture>
       </div>   
       <div class="conditions">

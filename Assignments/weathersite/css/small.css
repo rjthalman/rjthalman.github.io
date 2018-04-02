@@ -106,9 +106,7 @@ h3{
 section.forecast{
     display: none;
     }
-section.forecast h3.{
-    
-}
+section.forecast h3.{}
 article p.town_article{
     text-align: justify;
 }
@@ -155,7 +153,6 @@ fieldset {
     border-radius: .2em;
     margin:1.5em 0;
     border:#33838f solid 1px;
-}
 }
 label{
     display:block;
