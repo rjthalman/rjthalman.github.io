@@ -41,9 +41,9 @@ nav .navigation{
 .navigation a {
 	color:#fe9920;
 	text-decoration:none;
-	text-shadow:0px 0px 1px rgba(0,0,0,0.3); 
+	text-shadow:0px 0px 1px #100; 
 }
 .background img{
-    
+    width:100%
     
 }
