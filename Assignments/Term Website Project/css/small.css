@@ -1,49 +1,173 @@
 /*This is the main file css*/
 body {
-    background-image: 
+    font-family: 'Alegreya Sans', sans-serif; 
+    background-color:#49392c;
 }
 .logo{
-    float:left;
-    position: relative;
-    width: 15%;
+    position: absolute;
+    width:20% ;
+    margin: 0 0 0 0;
     
 }
-.title img{
+header h1{
+    text-align: center;
+}
+.container{
+    position: relative;
+    text-align: center;
+    margin: 0 0 0 0;
+    color:#FFF;
+}
+.titleImg img{
     position: relative;
     float:right;
-    width: 85%;
-    height: 200px;
+    width: 100%;
+    height: 400px;
+    
+}
+.title{
+    position: absolute;
+    font-size: 50px;
+    text-align: center;
+    color:#fff;
+    top: 20px
+}
+.button{
+    position: absolute;
+    top:3px;
+    left:3px;
+    width:50px;
+    height: 50px;
+    color:#fe9920;
+}
+nav button div{
+    width: 45px;
+    height: 8px;
+    background-color: #fe9920;
+    margin: 6px 0;
 }
 nav{
-    position: relative;
-    width:85%;
-	height:100px;
+    list-style-type:none;
+    width:100%;
 	float:right;
 	background:#566e3d;
 }
-nav .navigation{
-   position:relative;
-	top:35px;
-	left:20px;
+nav ul{
+    list-style-type:none;
+	top:15px;
+    bottom:
+    right: 0px;
 	margin:0px;
 	padding:0px;
 	list-style:none;
 }
 
-.navigation li {
-	width:100%px;
-    font-size: 25px;
+nav li {
+	width:100%;
+    font-size: 35px;
 	text-align:center;
-	padding:6px;
+	padding:30px;
 	float:left;
 }
-
-.navigation a {
+nav ul li a .hover{
+    color: #Fe9920;
+    background-color:black;
+}
+nav ul li a {
 	color:#fe9920;
 	text-decoration:none;
 	text-shadow:0px 0px 1px #100; 
 }
+.active{
+    background-color: #b9a44c;
+}
+.hide{
+    display:none;
+}
+/*--------------------home page-------------------------*/
+.background h1{
+    position:absolute;
+    left:10px;
+    bottom:70rem;
+    color: #Fa7921;
+    font-size: 75px;
+    text-align: left;   
+}
 .background img{
-    width:100%
+    width:100%;
+    
+}
+.salesItem p{
+    font-size: 75px;
+    display: inline;
+    color:#fa7921;
+    position:absolute;
+    text-align: center;
+    bottom:3rem;
+    filter: grayscale(0%);
+}
+.salesItem img{
+    width: 100%;
+    
+}
+/*----------------------Tours page------------------------*/
+
+.tours{
+    position:relative;
+}
+.tours h1{
+    font-size: 40px;
+    margin:0 0 0 0;
+    color:#fe9920;
+    text-align: center;
+}
+.tours div img{
+    left:2px;
+    width:50%;
+    border-radius: 2em;
+}
+.tours h3{
+    margin-left: 4px;
+    display: block;
+    color:#fe9920;
+    font-size: 30px; 
+}
+.tours ul{
+    display: block;
+    float:right;
+    margin-right: 6%;
+    color:white;
+    font-size:25px
+}
+/*----------------------Events page----------------------*/
+.event h1{
+    text-align: center;
+    color:#fe9920;
+}
+.event h2{
+    font-style: italic;
+    text-align: center;
+    color:#fe9920;
+}
+/*----------------------Events thankyou page-------------*/
+/*----------------------sales page----------------------*/
+/*----------------------service page--------------------*/
+/*----------------------contact page--------------------*/
+/*----------------------contact thankyou page-------------*/
+aside{
+    position: relative;
+    text-align: center;
+    background-color: #566e3d;
+    color:#b9a44c;
+    padding: 2px;
+}
+footer{
+    position:relative;
+    font-size:25px;
+    margin:0;
+    width: 100%;
+    background-color: #49392c;
+    color:#Fa7921;
+    bottom:0px;
     
 }

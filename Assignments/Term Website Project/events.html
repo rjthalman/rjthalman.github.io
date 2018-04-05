@@ -2,8 +2,8 @@
 <html lang="en-us">
 <head>
 	<meta charset="UTF-8">
-	<title>Mountain Spoke Cyclery Home</title>
-    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,500,700" rel="stylesheet">
+	<title>Mountain Spoke Cyclery Events</title>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
     <link href="css/small.css" rel="stylesheet">
     <link href="css/medium.css" rel="stylesheet">
@@ -22,13 +22,12 @@
         </div>
             <div class="title"><h1> Mountain Spoke Cyclery</h1></div>
         </div>
-        <nav>
         <button class="button" onclick="toggleNavMenu()">
             <div></div>
             <div></div>
             <div></div>
         </button>
-			
+			<nav>
 				<ul id="mainNav" class="hide">
 					<li class="active"><a href="index.html">Home</a></li>
                     <li><a href="tours.html">Tours</a></li>
@@ -40,14 +39,27 @@
 			</nav>
     </header>
     <main>
-        <div class="background">
-        <h1 href="tours.html">Come Ride with us!</h1>
-            <img src="img/mountain%20and%20bike.jpeg" alt="mountainbike & MA mountains">
-        </div>
-        <div class="salesItem">
-            <p>Making Room for 2018 bikes 20% off 2017 bikes</p>
-            <img src="img/Bike%20shop.jpeg">
-        </div>
+       <div class="event">
+        <h1>Cycle the Continental Divide</h1>
+           <h2>Annual Fun Ride</h2>
+         <form action="events_thanks.html" method="get" name="eventsCenter" id="event">
+      <fieldset>
+        <label><span>Full Name:</span><input name="fullname" type="text" value="" pattern="[a-zA-Z -._]{5,99}" required></label>
+          <label><span>Email:</span><input name="email" type="email" placeholder="bobs@youruncle.com" ></label>
+          <label><span>Phone:</span><input name="phone" type="tel" value="" pattern="[0-9]{10,20}"  required></label>
+          <label><span>Date of Birth:</span><input name="stormDate" type="date" required></label>
+          <label><span>Date of Birth:</span><input name="zipcode" type="number"  pattern="[0-9]{5,8}" required></label>
+          <label><span>Home state or Country:</span>
+          <input type="text" name="homeState"></label>
+          <label><span>
+              Special Acconmidations or Comments:</span><textarea name="Comments" min-width="70" height="50"></textarea>
+              
+          </label>
+        </fieldset>
+    
+          <input type="submit" value="Submit" class="submitStorm">
+      </form>
+        </div> 
     </main>
     <footer>
         <aside>
