@@ -42,17 +42,32 @@
        <div class="event">
         <h1>Cycle the Continental Divide</h1>
            <h2>Annual Fun Ride</h2>
-         <form action="events_thanks.html" method="get" name="eventsCenter" id="event">
+           <p><i>April 24th 2018</i></p>
+           <p><i>Route:</i></p>
+           <ul id="route" class="route">
+           <li><a><i>Start in Bozeman "Big Sky Bank" parking lot go up Main Street till it turns into Old Farm Route 34. - - - 5.2 miles</i></a></li>
+           <li><a><i>Head North on Old Farm route 34 - - - 35.5 miles / 56 ft elevation</i></a></li>
+           <li><a><i>Turn Right on to Mt Pass and go over dead horse saddle.-  - - 45 miles / 1,230 ft elevation</i></a></li>
+           <li><a><i>Turn right on Gilder's Flower Lane.- - - 24.3 miles / 154 ft elevation</i></a></li>
+           <li><a><i>Turn left on to North Main Street back to "Big Sky Bank". - - - 1.2 miles / 25 ft elevation</i></a></li>
+           </ul>
+           <p><i>$75 per rider/$85 per tandem.</i></p>
+           <p><i>Requirements:</i></p>
+           <ul id="requirments" class="requirments">
+           <li><a><i>Must be able to ride over 130 miles in a day.</i></a></li><li><a><i>Bring water and snacks. (breakfast and luch will be provided)</i></a></li>
+               <li><a><i>Bike must be check with Moutain Spoke Cyclery prior to ride to make sure able to make the trek.</i></a></li>
+               <li><a><i>All riders must wear helmet &#9679;ASTM's F1447 certified &#9679; (No rider will be permitted to ride without certified helmet!).</i></a></li>
+           </ul>
+         <form action="events_thankyou.html" target="_blank" method="POST" name="eventsCenter" id="event">
       <fieldset>
         <label><span>Full Name:</span><input name="fullname" type="text" value="" pattern="[a-zA-Z -._]{5,99}" required></label>
           <label><span>Email:</span><input name="email" type="email" placeholder="bobs@youruncle.com" ></label>
           <label><span>Phone:</span><input name="phone" type="tel" value="" pattern="[0-9]{10,20}"  required></label>
           <label><span>Date of Birth:</span><input name="stormDate" type="date" required></label>
-          <label><span>Date of Birth:</span><input name="zipcode" type="number"  pattern="[0-9]{5,8}" required></label>
           <label><span>Home state or Country:</span>
           <input type="text" name="homeState"></label>
           <label><span>
-              Special Acconmidations or Comments:</span><textarea name="Comments" min-width="70" height="50"></textarea>
+              Special Acconmidations or Comments:</span><textarea name="Comments" min-width="100" height="50"></textarea>
               
           </label>
         </fieldset>

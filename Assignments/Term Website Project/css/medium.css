@@ -1,0 +1,59 @@
+
+@media only screen and (min-width: 37.5em) {
+/*----------------------contact page--------------------*/
+.contactForm{
+    position:relative;
+    margin-left: 2%;
+    width:92%;
+}
+ h1{
+     text-align: center;
+   color:#fe9920 
+}
+iframe {
+    float:left;
+    margin-left: 2%
+}
+.contacts{
+    
+    color:#fe9920
+}
+fieldset {
+    position: relative;
+    background-color:#b9a44c;
+    border-radius: .4em;
+    margin:1.01em 1.01em 1.01em 1.01em;
+    border:#fa7921 solid 3px;
+}
+label{
+    display:block;
+    margin:.5em;
+    width: 100%;
+   
+}
+textarea{
+    width:90%;
+    height: 150%;
+}
+label span{
+    display: block;
+    font-size: 1.2em;
+    color: #49392c;
+    padding-top: .7em;
+    padding-bottom: .2em;    
+}
+input.SubmitQuestion{
+    
+    color:#111;
+    
+    border:solid 4px #fa7921;
+    border-radius:7px;
+    width: 95%;
+    margin:0 0 1% %;
+    font-size: 1.2em;
+    padding:.6em;
+    background:#b9a44c;
+    
+        
+}
+}

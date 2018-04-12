@@ -3,6 +3,9 @@ body {
     font-family: 'Alegreya Sans', sans-serif; 
     background-color:#49392c;
 }
+main, header, footer{
+    width:100%;
+}
 .logo{
     position: absolute;
     width:20% ;
@@ -55,7 +58,7 @@ nav{
 nav ul{
     list-style-type:none;
 	top:15px;
-    bottom:
+    
     right: 0px;
 	margin:0px;
 	padding:0px;
@@ -140,6 +143,9 @@ nav ul li a {
     font-size:25px
 }
 /*----------------------Events page----------------------*/
+.event{
+    font-size: 2em;
+}
 .event h1{
     text-align: center;
     color:#fe9920;
@@ -149,10 +155,148 @@ nav ul li a {
     text-align: center;
     color:#fe9920;
 }
+.route{
+    color:#fe9920
+}
+.event p{
+   color:#fe9920 
+}
+.requirments{
+    color:#fe9920
+}
+form#eventsCenter{
+   margin:2em 3%; 
+}
+
+fieldset {
+    background-color:#b9a44c;
+    border-radius: .4em;
+    margin:1.01em 1.01em 1.01em 1.01em;
+    border:#fa7921 solid 3px;
+}
+
+label{
+    display:block;
+    margin:.5em;
+    width: 50%;
+   
+}
+textarea{
+    width:150%;
+    height: 150%;
+}
+label span{
+    display: block;
+    font-size: 1.2em;
+    color: #49392c;
+    padding-top: .7em;
+    padding-bottom: .2em;    
+}
+input.submitStorm{
+    
+    color:#111;
+    
+    border:solid 4px #fa7921;
+    border-radius:7px;
+    width: 50%;
+    margin:.9em 0 7% 25%;
+    font-size: 1.2em;
+    padding:.6em;
+    background:#b9a44c;
+    box-shadow: 4px 4px 10px #666;
+        
+}
 /*----------------------Events thankyou page-------------*/
+.thankyou{
+    position: relative;
+    color:#fe9920;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom:45%; 
+}
 /*----------------------sales page----------------------*/
+
+.brands img{
+    background-color:white;
+     width:100%; 
+     }
+.bikes p{
+    text-align: center;
+    color:#fa7921;
+}
+.bikes ul li{
+    color:white;
+}
+.bikes img{
+    width:100%;
+}
 /*----------------------service page--------------------*/
+         table{
+            margin-left: 2%;
+             border: 1px solid #dddddd;
+             border-collapse: collapse;
+             width: 100%;
+             height: 100%;
+           text-align: left
+        }
+        td, th{
+            border: 1px solid #dddddd;
+              
+        } 
+.service{
+    text-align: center;
+    padding: 1%
+            }
 /*----------------------contact page--------------------*/
+.contactForm{
+    position:relative;
+    width:97%;
+}
+ .contacts h1{
+   color:#fe9920 
+}
+iframe {
+    width:97%;
+}
+.contacts{
+    
+    color:#fe9920
+}
+fieldset {
+    background-color:#b9a44c;
+    border-radius: .4em;
+    margin:1.01em 1.01em 1.01em 1.01em;
+    border:#fa7921 solid 3px;
+}
+label{
+    display:block;
+    margin:.5em;
+    width: 90%;
+   
+}
+textarea{
+    width:150%;
+    height: 150%;
+}
+label span{
+    display: block;
+    font-size: 1.2em;
+    color: #49392c;
+    padding-top: .7em;
+    padding-bottom: .2em;    
+}
+input.SubmitQuestion{
+    color:#111;
+    border:solid 4px #fa7921;
+    border-radius:7px;
+    width: 94%;
+    margin:0 0 1% 2%;
+    font-size: 1.2em;
+    padding:.6em;
+    background:#b9a44c;
+    
+        
+}
 /*----------------------contact thankyou page-------------*/
 aside{
     position: relative;
