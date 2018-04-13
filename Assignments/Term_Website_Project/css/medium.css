@@ -9,10 +9,17 @@
         display:none;
     }
     .hide{
-        display:grid;
         display:inline;
-        width:16%;
     }
+    nav ul{
+        display:inline;
+        width:
+    }
+    nav ul li{
+        width:12%;
+        display:inline;
+    }
+    
 /*----------------------contact page--------------------*/
 .contactForm{
     position:relative;
